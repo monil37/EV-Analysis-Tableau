@@ -1,0 +1,1333 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Make parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;AUDI&quot;'>
+        <calculation class='tableau' formula='&quot;AUDI&quot;' />
+        <members>
+          <member value='&quot;ACURA&quot;' />
+          <member value='&quot;ALFA ROMEO&quot;' />
+          <member value='&quot;AUDI&quot;' />
+          <member value='&quot;AZURE DYNAMICS&quot;' />
+          <member value='&quot;BENTLEY&quot;' />
+          <member value='&quot;BMW&quot;' />
+          <member value='&quot;BRIGHTDROP&quot;' />
+          <member value='&quot;CADILLAC&quot;' />
+          <member value='&quot;CHEVROLET&quot;' />
+          <member value='&quot;CHRYSLER&quot;' />
+          <member value='&quot;DODGE&quot;' />
+          <member value='&quot;FIAT&quot;' />
+          <member value='&quot;FISKER&quot;' />
+          <member value='&quot;FORD&quot;' />
+          <member value='&quot;GENESIS&quot;' />
+          <member value='&quot;GMC&quot;' />
+          <member value='&quot;HONDA&quot;' />
+          <member value='&quot;HYUNDAI&quot;' />
+          <member value='&quot;JAGUAR&quot;' />
+          <member value='&quot;JEEP&quot;' />
+          <member value='&quot;KIA&quot;' />
+          <member value='&quot;LAMBORGHINI&quot;' />
+          <member value='&quot;LAND ROVER&quot;' />
+          <member value='&quot;LEXUS&quot;' />
+          <member value='&quot;LINCOLN&quot;' />
+          <member value='&quot;LUCID&quot;' />
+          <member value='&quot;MAZDA&quot;' />
+          <member value='&quot;MERCEDES-BENZ&quot;' />
+          <member value='&quot;MINI&quot;' />
+          <member value='&quot;MITSUBISHI&quot;' />
+          <member value='&quot;MULLEN AUTOMOTIVE INC.&quot;' />
+          <member value='&quot;NISSAN&quot;' />
+          <member value='&quot;POLESTAR&quot;' />
+          <member value='&quot;PORSCHE&quot;' />
+          <member value='&quot;RAM&quot;' />
+          <member value='&quot;RIVIAN&quot;' />
+          <member value='&quot;ROLLS-ROYCE&quot;' />
+          <member value='&quot;SMART&quot;' />
+          <member value='&quot;SUBARU&quot;' />
+          <member value='&quot;TESLA&quot;' />
+          <member value='&quot;TH!NK&quot;' />
+          <member value='&quot;TOYOTA&quot;' />
+          <member value='&quot;VINFAST&quot;' />
+          <member value='&quot;VOLKSWAGEN&quot;' />
+          <member value='&quot;VOLVO&quot;' />
+          <member value='&quot;WHEEGO ELECTRIC CARS&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Electric_Vehicle_Population_Dat (Electric_Vehicle_Population_Data)' inline='true' name='federated.0k114340ly20wx16vw5z61x7iojg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Electric_Vehicle_Population_Data' name='excel-direct.14kaslq0654n8311li0810d8352r'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/monil/OneDrive/Desktop/Projects/Udemy Course/Data Analysis - SQL,Tableau,Power BI &amp; Excel  Real Projects/Electric Vehicle Dashboard project/Electric_Vehicle_Population_Data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.14kaslq0654n8311li0810d8352r' name='Electric_Vehicle_Population_Dat' table='[Electric_Vehicle_Population_Dat$]' type='table'>
+          <columns gridOrigin='A1:Q10001:no:A1:Q2147483647:0' header='yes' outcome='2'>
+            <column datatype='string' name='VIN (1-10)' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='string' name='City' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='integer' name='Postal Code' ordinal='4' />
+            <column datatype='date' date-parse-format='yyyy' name='Model Year' ordinal='5' />
+            <column datatype='string' name='Make' ordinal='6' />
+            <column datatype='string' name='Model' ordinal='7' />
+            <column datatype='string' name='Electric Vehicle Type' ordinal='8' />
+            <column datatype='string' name='Clean Alternative Fuel Vehicle (CAFV) Eligibility' ordinal='9' />
+            <column datatype='integer' name='Electric Range' ordinal='10' />
+            <column datatype='integer' name='Base MSRP' ordinal='11' />
+            <column datatype='integer' name='Legislative District' ordinal='12' />
+            <column datatype='integer' name='DOL Vehicle ID' ordinal='13' />
+            <column datatype='string' name='Vehicle Location' ordinal='14' />
+            <column datatype='string' name='Electric Utility' ordinal='15' />
+            <column datatype='integer' name='2020 Census Tract' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q10001:no:A1:Q2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIN (1-10)</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[VIN (1-10)]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>VIN (1-10)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Postal Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Postal Code]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Postal Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Model Year]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Model Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Make</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Make]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Make</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Vehicle Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Electric Vehicle Type]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Electric Vehicle Type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Clean Alternative Fuel Vehicle (CAFV) Eligibility]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Clean Alternative Fuel Vehicle (CAFV) Eligibility</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Electric Range]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Electric Range</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Base MSRP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Base MSRP]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Base MSRP</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Legislative District</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Legislative District]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Legislative District</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOL Vehicle ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOL Vehicle ID]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>DOL Vehicle ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Vehicle Location]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Vehicle Location</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Electric Utility</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Electric Utility]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>Electric Utility</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2020 Census Tract</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2020 Census Tract]</local-name>
+            <parent-name>[Electric_Vehicle_Population_Dat]</parent-name>
+            <remote-alias>2020 Census Tract</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country' datatype='string' name='[Calculation_1395834415461896193]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+        <calculation class='tableau' formula='&quot;United States&quot;' />
+      </column>
+      <column caption='Make calculated' datatype='boolean' name='[Calculation_1395834415472898050]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Make] = [Parameters].[Parameter 1]' />
+      </column>
+      <column caption='Zero' datatype='integer' name='[Calculation_1395834415473778691]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal' />
+      <column datatype='date' name='[Model Year]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Vin (1-10)' datatype='string' name='[VIN (1-10)]' role='dimension' type='nominal' />
+      <column caption='Electric_Vehicle_Population_Dat' datatype='table' name='[__tableau_internal_object_id__].[Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58]' role='measure' type='quantitative' />
+      <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+      <group caption='County Set' name='[County Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='COUNTD([DOL Vehicle ID])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[County]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Make, Model'>
+          <field>[Make]</field>
+          <field>[Model]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Electric Vehicle Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Battery Electric Vehicle (BEV)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Plug-in Hybrid Electric Vehicle (PHEV)&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Make parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;AUDI&quot;'>
+          <calculation class='tableau' formula='&quot;AUDI&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='Electric_Vehicle_Population_Dat' id='Electric!Vehicle!Population!Dat_977C1115531C49D5A5681F7572E97F58'>
+            <properties context=''>
+              <relation connection='excel-direct.14kaslq0654n8311li0810d8352r' name='Electric_Vehicle_Population_Dat' table='[Electric_Vehicle_Population_Dat$]' type='table'>
+                <columns gridOrigin='A1:Q10001:no:A1:Q2147483647:0' header='yes' outcome='2'>
+                  <column datatype='string' name='VIN (1-10)' ordinal='0' />
+                  <column datatype='string' name='County' ordinal='1' />
+                  <column datatype='string' name='City' ordinal='2' />
+                  <column datatype='string' name='State' ordinal='3' />
+                  <column datatype='integer' name='Postal Code' ordinal='4' />
+                  <column datatype='date' date-parse-format='yyyy' name='Model Year' ordinal='5' />
+                  <column datatype='string' name='Make' ordinal='6' />
+                  <column datatype='string' name='Model' ordinal='7' />
+                  <column datatype='string' name='Electric Vehicle Type' ordinal='8' />
+                  <column datatype='string' name='Clean Alternative Fuel Vehicle (CAFV) Eligibility' ordinal='9' />
+                  <column datatype='integer' name='Electric Range' ordinal='10' />
+                  <column datatype='integer' name='Base MSRP' ordinal='11' />
+                  <column datatype='integer' name='Legislative District' ordinal='12' />
+                  <column datatype='integer' name='DOL Vehicle ID' ordinal='13' />
+                  <column datatype='string' name='Vehicle Location' ordinal='14' />
+                  <column datatype='string' name='Electric Utility' ordinal='15' />
+                  <column datatype='integer' name='2020 Census Tract' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_CF333427D9B44459ADB7A7E721533ECD]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Electric Vehicle Type' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Make and Model'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Dat (Electric_Vehicle_Population_Data)' name='federated.0k114340ly20wx16vw5z61x7iojg' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Make parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;AUDI&quot;'>
+              <calculation class='tableau' formula='&quot;AUDI&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0k114340ly20wx16vw5z61x7iojg'>
+            <column caption='Make calculated' datatype='boolean' name='[Calculation_1395834415472898050]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Make] = [Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[DOL Vehicle ID]' derivation='CountD' name='[ctd:DOL Vehicle ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1395834415472898050]' derivation='None' name='[none:Calculation_1395834415472898050:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Make]' derivation='None' name='[none:Make:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;WA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Make:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0k114340ly20wx16vw5z61x7iojg].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Make:nk]' value='true' />
+            <format attr='text-format' field='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2743645906448364' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0k114340ly20wx16vw5z61x7iojg].[none:Make:nk]</rows>
+        <cols>[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]</cols>
+      </table>
+      <simple-id uuid='{A35EC63E-03B4-4287-BD0D-A29265DB5E31}' />
+    </worksheet>
+    <worksheet name='Maps'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Dat (Electric_Vehicle_Population_Data)' name='federated.0k114340ly20wx16vw5z61x7iojg' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0k114340ly20wx16vw5z61x7iojg'>
+            <column caption='Country' datatype='string' name='[Calculation_1395834415461896193]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+              <calculation class='tableau' formula='&quot;United States&quot;' />
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Calculation_1395834415461896193]' derivation='None' name='[none:Calculation_1395834415461896193:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Postal Code]' derivation='None' name='[none:Postal Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DOL Vehicle ID]' derivation='Sum' name='[sum:DOL Vehicle ID:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;WA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0k114340ly20wx16vw5z61x7iojg].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0k114340ly20wx16vw5z61x7iojg].[Longitude (generated)]' field-type='quantitative' max='27253784.490513992' min='25852150.00389931' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0k114340ly20wx16vw5z61x7iojg].[Latitude (generated)]' field-type='quantitative' max='6279429.5103814108' min='5839025.2416155664' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.0k114340ly20wx16vw5z61x7iojg].[sum:DOL Vehicle ID:qk]' />
+              <lod column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Postal Code:ok]' />
+              <lod column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415461896193:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-transparency' value='116' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0k114340ly20wx16vw5z61x7iojg].[Latitude (generated)]</rows>
+        <cols>[federated.0k114340ly20wx16vw5z61x7iojg].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D268CA3F-07FE-4852-94AC-918C0ED74D61}' />
+    </worksheet>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Dat (Electric_Vehicle_Population_Data)' name='federated.0k114340ly20wx16vw5z61x7iojg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0k114340ly20wx16vw5z61x7iojg'>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Model Year]' role='dimension' type='quantitative' />
+            <column-instance column='[DOL Vehicle ID]' derivation='CountD' name='[ctd:DOL Vehicle ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Model Year]' derivation='None' name='[none:Model Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6481767892837524' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]</rows>
+        <cols>[federated.0k114340ly20wx16vw5z61x7iojg].[none:Model Year:qk]</cols>
+      </table>
+      <simple-id uuid='{F6845E11-0D2A-4F45-8002-7E3BAAB815C9}' />
+    </worksheet>
+    <worksheet name='Top 10 Counties'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Dat (Electric_Vehicle_Population_Data)' name='federated.0k114340ly20wx16vw5z61x7iojg' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Make parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;AUDI&quot;'>
+              <calculation class='tableau' formula='&quot;AUDI&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0k114340ly20wx16vw5z61x7iojg'>
+            <column caption='Make calculated' datatype='boolean' name='[Calculation_1395834415472898050]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Make] = [Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column-instance column='[DOL Vehicle ID]' derivation='CountD' name='[ctd:DOL Vehicle ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1395834415472898050]' derivation='None' name='[none:Calculation_1395834415472898050:nk]' pivot='key' type='nominal' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0k114340ly20wx16vw5z61x7iojg].[County Set]' />
+          <filter class='categorical' column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1395834415472898050:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0k114340ly20wx16vw5z61x7iojg].[none:County:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0k114340ly20wx16vw5z61x7iojg].[County Set]</column>
+            <column>[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2743645906448364' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0k114340ly20wx16vw5z61x7iojg].[none:County:nk]</rows>
+        <cols>[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]</cols>
+      </table>
+      <simple-id uuid='{A532CDB8-DF90-444B-BC25-D14B0B22A869}' />
+    </worksheet>
+    <worksheet name='Vehicle Type Donut'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Dat (Electric_Vehicle_Population_Data)' name='federated.0k114340ly20wx16vw5z61x7iojg' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Make parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;AUDI&quot;'>
+              <calculation class='tableau' formula='&quot;AUDI&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0k114340ly20wx16vw5z61x7iojg'>
+            <column caption='Make calculated' datatype='boolean' name='[Calculation_1395834415472898050]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Make] = [Parameters].[Parameter 1]' />
+            </column>
+            <column caption='Zero' datatype='integer' name='[Calculation_1395834415473778691]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column-instance column='[DOL Vehicle ID]' derivation='CountD' name='[ctd:DOL Vehicle ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1395834415472898050]' derivation='None' name='[none:Calculation_1395834415472898050:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1395834415473778691]' derivation='Sum' name='[sum:Calculation_1395834415473778691:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1395834415472898050:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0k114340ly20wx16vw5z61x7iojg].[sum:Calculation_1395834415473778691:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0k114340ly20wx16vw5z61x7iojg].[sum:Calculation_1395834415473778691:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.0k114340ly20wx16vw5z61x7iojg].[sum:Calculation_1395834415473778691:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' value='328' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='446' />
+                <format attr='maxheight' value='446' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0k114340ly20wx16vw5z61x7iojg].[sum:Calculation_1395834415473778691:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Electric Vehicle Type:nk]' />
+              <wedge-size column='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' />
+              <size column='[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]' />
+              <lod column='[Parameters].[Parameter 1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6151933670043945' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0k114340ly20wx16vw5z61x7iojg].[sum:Calculation_1395834415473778691:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0k114340ly20wx16vw5z61x7iojg].[sum:Calculation_1395834415473778691:qk] + [federated.0k114340ly20wx16vw5z61x7iojg].[sum:Calculation_1395834415473778691:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{66FD4890-F73A-4694-AE44-F4A8F9295465}' />
+    </worksheet>
+    <worksheet name='Year and Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Electric_Vehicle_Population_Dat (Electric_Vehicle_Population_Data)' name='federated.0k114340ly20wx16vw5z61x7iojg' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Make parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;AUDI&quot;'>
+              <calculation class='tableau' formula='&quot;AUDI&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0k114340ly20wx16vw5z61x7iojg'>
+            <column caption='Make calculated' datatype='boolean' name='[Calculation_1395834415472898050]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Make] = [Parameters].[Parameter 1]' />
+            </column>
+            <column datatype='integer' name='[DOL Vehicle ID]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Electric Vehicle Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Make]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Model Year]' role='dimension' type='quantitative' />
+            <column-instance column='[DOL Vehicle ID]' derivation='CountD' name='[ctd:DOL Vehicle ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1395834415472898050]' derivation='None' name='[none:Calculation_1395834415472898050:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Electric Vehicle Type]' derivation='None' name='[none:Electric Vehicle Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Model Year]' derivation='Year-Trunc' name='[tyr:Model Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Model Year]' derivation='Year' name='[yr:Model Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_1395834415472898050:nk]' member='true' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0k114340ly20wx16vw5z61x7iojg].[yr:Model Year:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:Model Year:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[yr:Model Year:ok]' member='1999' />
+                <groupfilter function='member' level='[yr:Model Year:ok]' member='2000' />
+                <groupfilter function='member' level='[yr:Model Year:ok]' member='2002' />
+                <groupfilter function='member' level='[yr:Model Year:ok]' member='2003' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0k114340ly20wx16vw5z61x7iojg].[yr:Model Year:ok]</column>
+            <column>[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0k114340ly20wx16vw5z61x7iojg].[tyr:Model Year:ok]' value='0' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Electric Vehicle Type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0k114340ly20wx16vw5z61x7iojg].[ctd:DOL Vehicle ID:qk]</rows>
+        <cols>[federated.0k114340ly20wx16vw5z61x7iojg].[tyr:Model Year:ok]</cols>
+      </table>
+      <simple-id uuid='{599E6A10-CC7A-4726-9BCD-F95B34C476E4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Make parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;AUDI&quot;'>
+          <calculation class='tableau' formula='&quot;AUDI&quot;' />
+          <members>
+            <member value='&quot;ACURA&quot;' />
+            <member value='&quot;ALFA ROMEO&quot;' />
+            <member value='&quot;AUDI&quot;' />
+            <member value='&quot;AZURE DYNAMICS&quot;' />
+            <member value='&quot;BENTLEY&quot;' />
+            <member value='&quot;BMW&quot;' />
+            <member value='&quot;BRIGHTDROP&quot;' />
+            <member value='&quot;CADILLAC&quot;' />
+            <member value='&quot;CHEVROLET&quot;' />
+            <member value='&quot;CHRYSLER&quot;' />
+            <member value='&quot;DODGE&quot;' />
+            <member value='&quot;FIAT&quot;' />
+            <member value='&quot;FISKER&quot;' />
+            <member value='&quot;FORD&quot;' />
+            <member value='&quot;GENESIS&quot;' />
+            <member value='&quot;GMC&quot;' />
+            <member value='&quot;HONDA&quot;' />
+            <member value='&quot;HYUNDAI&quot;' />
+            <member value='&quot;JAGUAR&quot;' />
+            <member value='&quot;JEEP&quot;' />
+            <member value='&quot;KIA&quot;' />
+            <member value='&quot;LAMBORGHINI&quot;' />
+            <member value='&quot;LAND ROVER&quot;' />
+            <member value='&quot;LEXUS&quot;' />
+            <member value='&quot;LINCOLN&quot;' />
+            <member value='&quot;LUCID&quot;' />
+            <member value='&quot;MAZDA&quot;' />
+            <member value='&quot;MERCEDES-BENZ&quot;' />
+            <member value='&quot;MINI&quot;' />
+            <member value='&quot;MITSUBISHI&quot;' />
+            <member value='&quot;MULLEN AUTOMOTIVE INC.&quot;' />
+            <member value='&quot;NISSAN&quot;' />
+            <member value='&quot;POLESTAR&quot;' />
+            <member value='&quot;PORSCHE&quot;' />
+            <member value='&quot;RAM&quot;' />
+            <member value='&quot;RIVIAN&quot;' />
+            <member value='&quot;ROLLS-ROYCE&quot;' />
+            <member value='&quot;SMART&quot;' />
+            <member value='&quot;SUBARU&quot;' />
+            <member value='&quot;TESLA&quot;' />
+            <member value='&quot;TH!NK&quot;' />
+            <member value='&quot;TOYOTA&quot;' />
+            <member value='&quot;VINFAST&quot;' />
+            <member value='&quot;VOLKSWAGEN&quot;' />
+            <member value='&quot;VOLVO&quot;' />
+            <member value='&quot;WHEEGO ELECTRIC CARS&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='89894' id='7' param='horz' type-v2='layout-flow' w='99034' x='483' y='9166'>
+            <zone h='89894' id='5' type-v2='layout-basic' w='89378' x='483' y='9166'>
+              <zone h='54475' id='3' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='89378' x='483' y='9166'>
+                <zone fixed-size='611' h='54524' id='4' is-fixed='true' name='Vehicle Type Donut' show-title='false' w='29813' x='483' y='9166'>
+                  <layout-cache has-max-size-h='true' maxheight='497' minheight='497' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='54524' id='10' name='Make and Model' show-title='false' w='29813' x='30296' y='9166'>
+                  <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='54524' id='11' name='Top 10 Counties' show-title='false' w='29752' x='60109' y='9166'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='30552' id='12' name='Maps' show-title='false' w='44689' x='483' y='68508'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30552' id='14' name='Year and Type' show-title='false' w='44689' x='45172' y='68508'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4867' id='16' type-v2='text' w='44689' x='483' y='63641'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontname='Tableau Medium'>Vehicle owned by Postcode</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f5eddc' />
+                </zone-style>
+              </zone>
+              <zone h='4867' id='17' type-v2='text' w='44689' x='45172' y='63641'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontname='Tableau Medium'>Vehicle Year</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f5eddc' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='89894' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9656' x='89861' y='9166'>
+              <zone custom-title='true' h='89894' id='9' mode='list' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='9656' x='89861' y='9166'>
+                <formatted-text>
+                  <run fontalignment='1'>Car make</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='4113' id='15' type-v2='text' w='99034' x='483' y='940'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Tableau Medium' fontsize='14'>Electric Vehicle Analysis Washington</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f5eddc' />
+            </zone-style>
+          </zone>
+          <zone h='4113' id='18' param='horz' type-v2='layout-flow' w='9657' x='89860' y='5053' />
+          <zone h='4113' id='19' type-v2='text' w='29812' x='483' y='5053'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Tableau Medium'>Vehicle Type</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f5eddc' />
+            </zone-style>
+          </zone>
+          <zone h='4113' id='20' type-v2='text' w='29813' x='30295' y='5053'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Tableau Medium'>Make</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f5eddc' />
+            </zone-style>
+          </zone>
+          <zone h='4113' id='21' type-v2='text' w='29752' x='60108' y='5053'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Tableau Medium'>Top 10 Counties</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f5eddc' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8578' id='8' name='Vehicle Type Donut' pane-specification-id='1' param='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Electric Vehicle Type:nk]' show-title='false' type-v2='color' w='14182' x='15088' y='10341' />
+      </zones>
+      <simple-id uuid='{C153D35A-2B45-4731-B751-6D779C405726}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C45FDE97-3B04-4530-890F-F5580775DFBD}' />
+    </window>
+    <window class='worksheet' name='Year and Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Electric Vehicle Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AB5A0F3C-C3BA-47A9-90AB-97C6DD5D766D}' />
+    </window>
+    <window class='worksheet' name='Maps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0k114340ly20wx16vw5z61x7iojg].[sum:DOL Vehicle ID:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{DFAA04E9-9853-40B0-8528-A1C5528A4051}' />
+    </window>
+    <window class='worksheet' name='Top 10 Counties'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{60194E03-8675-4BC6-90EB-EDCF44A0DCFE}' />
+    </window>
+    <window class='worksheet' name='Make and Model'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card pane-specification-id='0' param='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Calculation_1395834415472898050:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='2' />
+      </viewpoint>
+      <simple-id uuid='{EDDBB0BC-D9A0-4ED4-A334-D968B9A0DF76}' />
+    </window>
+    <window class='worksheet' name='Vehicle Type Donut'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0k114340ly20wx16vw5z61x7iojg].[none:Electric Vehicle Type:nk]' type='color' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AD350E02-F714-4570-8B36-586530B8B85A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Make and Model'>
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='Maps'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Top 10 Counties'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='Vehicle Type Donut'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Year and Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='17' />
+      <simple-id uuid='{0F51263D-63F4-4A5C-BAD7-245ED91F3108}' />
+    </window>
+  </windows>
+</workbook>
